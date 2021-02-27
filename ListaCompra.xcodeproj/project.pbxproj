@@ -14,6 +14,12 @@
 		844F175B25EAE5130099BAEE /* ListaProductosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F175925EAE5130099BAEE /* ListaProductosViewController.swift */; };
 		844F175C25EAE5130099BAEE /* ListaProductosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844F175A25EAE5130099BAEE /* ListaProductosViewController.xib */; };
 		844F176225EAE65E0099BAEE /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F176125EAE65E0099BAEE /* ViewControllerExtension.swift */; };
+		844F176525EAED110099BAEE /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F176425EAED110099BAEE /* TableViewExtension.swift */; };
+		844F176B25EAF2550099BAEE /* CeldaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F176925EAF2550099BAEE /* CeldaViewCell.swift */; };
+		844F176C25EAF2550099BAEE /* CeldaViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844F176A25EAF2550099BAEE /* CeldaViewCell.xib */; };
+		844F177125EAF7EC0099BAEE /* CellViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F177025EAF7EC0099BAEE /* CellViewExtension.swift */; };
+		844F177425EAFA1F0099BAEE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F177325EAFA1F0099BAEE /* ColorExtension.swift */; };
+		844F177725EB015A0099BAEE /* LabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F177625EB015A0099BAEE /* LabelExtension.swift */; };
 		90B97EC1691AD90C6FCA82CA /* Pods_ListaCompra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5948E5A3106795ED7BF6EE /* Pods_ListaCompra.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +35,12 @@
 		844F175925EAE5130099BAEE /* ListaProductosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaProductosViewController.swift; sourceTree = "<group>"; };
 		844F175A25EAE5130099BAEE /* ListaProductosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaProductosViewController.xib; sourceTree = "<group>"; };
 		844F176125EAE65E0099BAEE /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		844F176425EAED110099BAEE /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
+		844F176925EAF2550099BAEE /* CeldaViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaViewCell.swift; sourceTree = "<group>"; };
+		844F176A25EAF2550099BAEE /* CeldaViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CeldaViewCell.xib; sourceTree = "<group>"; };
+		844F177025EAF7EC0099BAEE /* CellViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewExtension.swift; sourceTree = "<group>"; };
+		844F177325EAFA1F0099BAEE /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		844F177625EB015A0099BAEE /* LabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExtension.swift; sourceTree = "<group>"; };
 		EF5948E5A3106795ED7BF6EE /* Pods_ListaCompra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListaCompra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,6 +133,7 @@
 			children = (
 				844F175A25EAE5130099BAEE /* ListaProductosViewController.xib */,
 				844F175925EAE5130099BAEE /* ListaProductosViewController.swift */,
+				844F176825EAF2040099BAEE /* Celda */,
 			);
 			path = ListaProductos;
 			sourceTree = "<group>";
@@ -129,8 +142,21 @@
 			isa = PBXGroup;
 			children = (
 				844F176125EAE65E0099BAEE /* ViewControllerExtension.swift */,
+				844F176425EAED110099BAEE /* TableViewExtension.swift */,
+				844F177025EAF7EC0099BAEE /* CellViewExtension.swift */,
+				844F177325EAFA1F0099BAEE /* ColorExtension.swift */,
+				844F177625EB015A0099BAEE /* LabelExtension.swift */,
 			);
 			path = Extensiones;
+			sourceTree = "<group>";
+		};
+		844F176825EAF2040099BAEE /* Celda */ = {
+			isa = PBXGroup;
+			children = (
+				844F176A25EAF2550099BAEE /* CeldaViewCell.xib */,
+				844F176925EAF2550099BAEE /* CeldaViewCell.swift */,
+			);
+			path = Celda;
 			sourceTree = "<group>";
 		};
 		8AA0F81BBFABFEF67F5A09C3 /* Pods */ = {
@@ -210,6 +236,7 @@
 			files = (
 				844F174225EAE1B10099BAEE /* LaunchScreen.storyboard in Resources */,
 				844F173F25EAE1B10099BAEE /* Assets.xcassets in Resources */,
+				844F176C25EAF2550099BAEE /* CeldaViewCell.xib in Resources */,
 				844F175C25EAE5130099BAEE /* ListaProductosViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,10 +273,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844F177725EB015A0099BAEE /* LabelExtension.swift in Sources */,
+				844F176B25EAF2550099BAEE /* CeldaViewCell.swift in Sources */,
+				844F177125EAF7EC0099BAEE /* CellViewExtension.swift in Sources */,
 				844F176225EAE65E0099BAEE /* ViewControllerExtension.swift in Sources */,
+				844F177425EAFA1F0099BAEE /* ColorExtension.swift in Sources */,
 				844F175B25EAE5130099BAEE /* ListaProductosViewController.swift in Sources */,
 				844F173625EAE1B00099BAEE /* AppDelegate.swift in Sources */,
 				844F173825EAE1B00099BAEE /* SceneDelegate.swift in Sources */,
+				844F176525EAED110099BAEE /* TableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
