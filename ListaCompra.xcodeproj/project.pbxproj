@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		844F173625EAE1B00099BAEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F173525EAE1B00099BAEE /* AppDelegate.swift */; };
 		844F173825EAE1B00099BAEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F173725EAE1B00099BAEE /* SceneDelegate.swift */; };
-		844F173A25EAE1B00099BAEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F173925EAE1B00099BAEE /* ViewController.swift */; };
-		844F173D25EAE1B00099BAEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844F173B25EAE1B00099BAEE /* Main.storyboard */; };
 		844F173F25EAE1B10099BAEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844F173E25EAE1B10099BAEE /* Assets.xcassets */; };
 		844F174225EAE1B10099BAEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844F174025EAE1B10099BAEE /* LaunchScreen.storyboard */; };
+		844F175B25EAE5130099BAEE /* ListaProductosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F175925EAE5130099BAEE /* ListaProductosViewController.swift */; };
+		844F175C25EAE5130099BAEE /* ListaProductosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844F175A25EAE5130099BAEE /* ListaProductosViewController.xib */; };
+		844F176225EAE65E0099BAEE /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F176125EAE65E0099BAEE /* ViewControllerExtension.swift */; };
+		90B97EC1691AD90C6FCA82CA /* Pods_ListaCompra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5948E5A3106795ED7BF6EE /* Pods_ListaCompra.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63572C6D2A949F2E38BDDBDC /* Pods-ListaCompra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListaCompra.debug.xcconfig"; path = "Target Support Files/Pods-ListaCompra/Pods-ListaCompra.debug.xcconfig"; sourceTree = "<group>"; };
+		73E5BB908610D33330E8BCD4 /* Pods-ListaCompra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListaCompra.release.xcconfig"; path = "Target Support Files/Pods-ListaCompra/Pods-ListaCompra.release.xcconfig"; sourceTree = "<group>"; };
 		844F173225EAE1B00099BAEE /* ListaCompra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListaCompra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844F173525EAE1B00099BAEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844F173725EAE1B00099BAEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		844F173925EAE1B00099BAEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		844F173C25EAE1B00099BAEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		844F173E25EAE1B10099BAEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844F174125EAE1B10099BAEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		844F174325EAE1B10099BAEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844F175925EAE5130099BAEE /* ListaProductosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaProductosViewController.swift; sourceTree = "<group>"; };
+		844F175A25EAE5130099BAEE /* ListaProductosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaProductosViewController.xib; sourceTree = "<group>"; };
+		844F176125EAE65E0099BAEE /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		EF5948E5A3106795ED7BF6EE /* Pods_ListaCompra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListaCompra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90B97EC1691AD90C6FCA82CA /* Pods_ListaCompra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				844F173425EAE1B00099BAEE /* ListaCompra */,
 				844F173325EAE1B00099BAEE /* Products */,
+				8AA0F81BBFABFEF67F5A09C3 /* Pods */,
+				D229558B5E715D9A901D64BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +67,87 @@
 			children = (
 				844F173525EAE1B00099BAEE /* AppDelegate.swift */,
 				844F173725EAE1B00099BAEE /* SceneDelegate.swift */,
-				844F173925EAE1B00099BAEE /* ViewController.swift */,
-				844F173B25EAE1B00099BAEE /* Main.storyboard */,
+				844F174E25EAE2780099BAEE /* Funcionalidades */,
+				844F175125EAE2A50099BAEE /* BDD */,
+				844F175025EAE28F0099BAEE /* Ficheros de Soporte */,
+				844F174F25EAE2850099BAEE /* Utils */,
 				844F173E25EAE1B10099BAEE /* Assets.xcassets */,
-				844F174025EAE1B10099BAEE /* LaunchScreen.storyboard */,
-				844F174325EAE1B10099BAEE /* Info.plist */,
 			);
 			path = ListaCompra;
+			sourceTree = "<group>";
+		};
+		844F174E25EAE2780099BAEE /* Funcionalidades */ = {
+			isa = PBXGroup;
+			children = (
+				844F175425EAE40A0099BAEE /* Launch */,
+				844F175825EAE4F40099BAEE /* ListaProductos */,
+			);
+			path = Funcionalidades;
+			sourceTree = "<group>";
+		};
+		844F174F25EAE2850099BAEE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				844F176025EAE6420099BAEE /* Extensiones */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		844F175025EAE28F0099BAEE /* Ficheros de Soporte */ = {
+			isa = PBXGroup;
+			children = (
+				844F174325EAE1B10099BAEE /* Info.plist */,
+			);
+			path = "Ficheros de Soporte";
+			sourceTree = "<group>";
+		};
+		844F175125EAE2A50099BAEE /* BDD */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BDD;
+			sourceTree = "<group>";
+		};
+		844F175425EAE40A0099BAEE /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				844F174025EAE1B10099BAEE /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		844F175825EAE4F40099BAEE /* ListaProductos */ = {
+			isa = PBXGroup;
+			children = (
+				844F175A25EAE5130099BAEE /* ListaProductosViewController.xib */,
+				844F175925EAE5130099BAEE /* ListaProductosViewController.swift */,
+			);
+			path = ListaProductos;
+			sourceTree = "<group>";
+		};
+		844F176025EAE6420099BAEE /* Extensiones */ = {
+			isa = PBXGroup;
+			children = (
+				844F176125EAE65E0099BAEE /* ViewControllerExtension.swift */,
+			);
+			path = Extensiones;
+			sourceTree = "<group>";
+		};
+		8AA0F81BBFABFEF67F5A09C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63572C6D2A949F2E38BDDBDC /* Pods-ListaCompra.debug.xcconfig */,
+				73E5BB908610D33330E8BCD4 /* Pods-ListaCompra.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D229558B5E715D9A901D64BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF5948E5A3106795ED7BF6EE /* Pods_ListaCompra.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +157,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 844F174625EAE1B10099BAEE /* Build configuration list for PBXNativeTarget "ListaCompra" */;
 			buildPhases = (
+				CFB2AFD7E1908289BA0102AB /* [CP] Check Pods Manifest.lock */,
 				844F172E25EAE1B00099BAEE /* Sources */,
 				844F172F25EAE1B00099BAEE /* Frameworks */,
 				844F173025EAE1B00099BAEE /* Resources */,
@@ -126,18 +210,44 @@
 			files = (
 				844F174225EAE1B10099BAEE /* LaunchScreen.storyboard in Resources */,
 				844F173F25EAE1B10099BAEE /* Assets.xcassets in Resources */,
-				844F173D25EAE1B00099BAEE /* Main.storyboard in Resources */,
+				844F175C25EAE5130099BAEE /* ListaProductosViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CFB2AFD7E1908289BA0102AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ListaCompra-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		844F172E25EAE1B00099BAEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844F173A25EAE1B00099BAEE /* ViewController.swift in Sources */,
+				844F176225EAE65E0099BAEE /* ViewControllerExtension.swift in Sources */,
+				844F175B25EAE5130099BAEE /* ListaProductosViewController.swift in Sources */,
 				844F173625EAE1B00099BAEE /* AppDelegate.swift in Sources */,
 				844F173825EAE1B00099BAEE /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +256,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		844F173B25EAE1B00099BAEE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				844F173C25EAE1B00099BAEE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		844F174025EAE1B10099BAEE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,12 +385,14 @@
 		};
 		844F174725EAE1B10099BAEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63572C6D2A949F2E38BDDBDC /* Pods-ListaCompra.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FYJ8KZ6GH4;
-				INFOPLIST_FILE = ListaCompra/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ListaCompra/Ficheros de Soporte/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +400,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kostalosh.ListaCompra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		844F174825EAE1B10099BAEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73E5BB908610D33330E8BCD4 /* Pods-ListaCompra.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FYJ8KZ6GH4;
-				INFOPLIST_FILE = ListaCompra/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ListaCompra/Ficheros de Soporte/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +421,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kostalosh.ListaCompra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
