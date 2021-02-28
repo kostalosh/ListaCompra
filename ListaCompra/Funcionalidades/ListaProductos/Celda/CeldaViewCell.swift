@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import SwipeCellKit
 
-final class CeldaViewCell: UITableViewCell {
+final class CeldaViewCell:  UITableViewCell {
 
     //MARK: - Outlets
     
@@ -16,6 +17,7 @@ final class CeldaViewCell: UITableViewCell {
     @IBOutlet weak var precioProductolbl: UILabel!
     @IBOutlet weak var nombreCategoria: UILabel!
     @IBOutlet weak var cantidadProducto: UILabel!
+    @IBOutlet weak var UIStepper: UIStepper!
     
     
     //MARK: - Propiedades
@@ -44,6 +46,7 @@ final class CeldaViewCell: UITableViewCell {
         cantidadProducto.secundaria()
     }
     
+    
     //MARK: - Funciones Públicas
     
     func fill(nombreProducto: String, precioProducto: String, cantidad: String){
@@ -52,5 +55,8 @@ final class CeldaViewCell: UITableViewCell {
         cantidadProducto.text = cantidad
     }
     
-
+    @IBAction func UIStepperChanged(_ sender: Any) {
+        cantidadProducto.text = String(format: "%.0f", UIStepper.value)
+    }
+    
 }

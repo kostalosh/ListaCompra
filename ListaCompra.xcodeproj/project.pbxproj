@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,12 +21,14 @@
 		844F177425EAFA1F0099BAEE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F177325EAFA1F0099BAEE /* ColorExtension.swift */; };
 		844F177725EB015A0099BAEE /* LabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F177625EB015A0099BAEE /* LabelExtension.swift */; };
 		8466C53425EBC7E200935B6D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C53325EBC7E200935B6D /* Constant.swift */; };
-		90B97EC1691AD90C6FCA82CA /* Pods_ListaCompra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5948E5A3106795ED7BF6EE /* Pods_ListaCompra.framework */; };
+		8466C53B25EBDF6F00935B6D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8466C53A25EBDF6F00935B6D /* Localizable.strings */; };
+		8466C53F25EBE05100935B6D /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C53E25EBE05100935B6D /* StringExtensions.swift */; };
+		8466C54425EBEBE300935B6D /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8466C54325EBEBE300935B6D /* SwipeCellKit */; };
+		8466C55125EC0F3E00935B6D /* DetalleProductoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C54F25EC0F3E00935B6D /* DetalleProductoViewController.swift */; };
+		8466C55225EC0F3E00935B6D /* DetalleProductoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8466C55025EC0F3E00935B6D /* DetalleProductoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		63572C6D2A949F2E38BDDBDC /* Pods-ListaCompra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListaCompra.debug.xcconfig"; path = "Target Support Files/Pods-ListaCompra/Pods-ListaCompra.debug.xcconfig"; sourceTree = "<group>"; };
-		73E5BB908610D33330E8BCD4 /* Pods-ListaCompra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListaCompra.release.xcconfig"; path = "Target Support Files/Pods-ListaCompra/Pods-ListaCompra.release.xcconfig"; sourceTree = "<group>"; };
 		844F173225EAE1B00099BAEE /* ListaCompra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListaCompra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844F173525EAE1B00099BAEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844F173725EAE1B00099BAEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +45,10 @@
 		844F177325EAFA1F0099BAEE /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		844F177625EB015A0099BAEE /* LabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExtension.swift; sourceTree = "<group>"; };
 		8466C53325EBC7E200935B6D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		EF5948E5A3106795ED7BF6EE /* Pods_ListaCompra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListaCompra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8466C53A25EBDF6F00935B6D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8466C53E25EBE05100935B6D /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		8466C54F25EC0F3E00935B6D /* DetalleProductoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleProductoViewController.swift; sourceTree = "<group>"; };
+		8466C55025EC0F3E00935B6D /* DetalleProductoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalleProductoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90B97EC1691AD90C6FCA82CA /* Pods_ListaCompra.framework in Frameworks */,
+				8466C54425EBEBE300935B6D /* SwipeCellKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +68,6 @@
 			children = (
 				844F173425EAE1B00099BAEE /* ListaCompra */,
 				844F173325EAE1B00099BAEE /* Products */,
-				8AA0F81BBFABFEF67F5A09C3 /* Pods */,
-				D229558B5E715D9A901D64BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +99,7 @@
 			children = (
 				844F175425EAE40A0099BAEE /* Launch */,
 				844F175825EAE4F40099BAEE /* ListaProductos */,
+				8466C54C25EC07D500935B6D /* EditaProducto */,
 			);
 			path = Funcionalidades;
 			sourceTree = "<group>";
@@ -112,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				844F174325EAE1B10099BAEE /* Info.plist */,
+				8466C53A25EBDF6F00935B6D /* Localizable.strings */,
 			);
 			path = "Ficheros de Soporte";
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 				844F177025EAF7EC0099BAEE /* CellViewExtension.swift */,
 				844F177325EAFA1F0099BAEE /* ColorExtension.swift */,
 				844F177625EB015A0099BAEE /* LabelExtension.swift */,
+				8466C53E25EBE05100935B6D /* StringExtensions.swift */,
 			);
 			path = Extensiones;
 			sourceTree = "<group>";
@@ -162,21 +168,13 @@
 			path = Celda;
 			sourceTree = "<group>";
 		};
-		8AA0F81BBFABFEF67F5A09C3 /* Pods */ = {
+		8466C54C25EC07D500935B6D /* EditaProducto */ = {
 			isa = PBXGroup;
 			children = (
-				63572C6D2A949F2E38BDDBDC /* Pods-ListaCompra.debug.xcconfig */,
-				73E5BB908610D33330E8BCD4 /* Pods-ListaCompra.release.xcconfig */,
+				8466C55025EC0F3E00935B6D /* DetalleProductoViewController.xib */,
+				8466C54F25EC0F3E00935B6D /* DetalleProductoViewController.swift */,
 			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		D229558B5E715D9A901D64BB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EF5948E5A3106795ED7BF6EE /* Pods_ListaCompra.framework */,
-			);
-			name = Frameworks;
+			path = EditaProducto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +184,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 844F174625EAE1B10099BAEE /* Build configuration list for PBXNativeTarget "ListaCompra" */;
 			buildPhases = (
-				CFB2AFD7E1908289BA0102AB /* [CP] Check Pods Manifest.lock */,
 				844F172E25EAE1B00099BAEE /* Sources */,
 				844F172F25EAE1B00099BAEE /* Frameworks */,
 				844F173025EAE1B00099BAEE /* Resources */,
@@ -196,6 +193,9 @@
 			dependencies = (
 			);
 			name = ListaCompra;
+			packageProductDependencies = (
+				8466C54325EBEBE300935B6D /* SwipeCellKit */,
+			);
 			productName = ListaCompra;
 			productReference = 844F173225EAE1B00099BAEE /* ListaCompra.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 844F172925EAE1B00099BAEE;
+			packageReferences = (
+				8466C54225EBEBE300935B6D /* XCRemoteSwiftPackageReference "SwipeCellKit" */,
+			);
 			productRefGroup = 844F173325EAE1B00099BAEE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -238,50 +241,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				844F174225EAE1B10099BAEE /* LaunchScreen.storyboard in Resources */,
+				8466C53B25EBDF6F00935B6D /* Localizable.strings in Resources */,
 				844F173F25EAE1B10099BAEE /* Assets.xcassets in Resources */,
 				844F176C25EAF2550099BAEE /* CeldaViewCell.xib in Resources */,
+				8466C55225EC0F3E00935B6D /* DetalleProductoViewController.xib in Resources */,
 				844F175C25EAE5130099BAEE /* ListaProductosViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		CFB2AFD7E1908289BA0102AB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ListaCompra-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		844F172E25EAE1B00099BAEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8466C55125EC0F3E00935B6D /* DetalleProductoViewController.swift in Sources */,
 				844F177725EB015A0099BAEE /* LabelExtension.swift in Sources */,
 				844F176B25EAF2550099BAEE /* CeldaViewCell.swift in Sources */,
 				844F177125EAF7EC0099BAEE /* CellViewExtension.swift in Sources */,
 				844F176225EAE65E0099BAEE /* ViewControllerExtension.swift in Sources */,
 				844F177425EAFA1F0099BAEE /* ColorExtension.swift in Sources */,
 				844F175B25EAE5130099BAEE /* ListaProductosViewController.swift in Sources */,
+				8466C53F25EBE05100935B6D /* StringExtensions.swift in Sources */,
 				844F173625EAE1B00099BAEE /* AppDelegate.swift in Sources */,
 				8466C53425EBC7E200935B6D /* Constant.swift in Sources */,
 				844F173825EAE1B00099BAEE /* SceneDelegate.swift in Sources */,
@@ -354,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -409,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -421,7 +403,6 @@
 		};
 		844F174725EAE1B10099BAEE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63572C6D2A949F2E38BDDBDC /* Pods-ListaCompra.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -442,7 +423,6 @@
 		};
 		844F174825EAE1B10099BAEE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73E5BB908610D33330E8BCD4 /* Pods-ListaCompra.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -483,6 +463,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8466C54225EBEBE300935B6D /* XCRemoteSwiftPackageReference "SwipeCellKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwipeCellKit/SwipeCellKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8466C54325EBEBE300935B6D /* SwipeCellKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8466C54225EBEBE300935B6D /* XCRemoteSwiftPackageReference "SwipeCellKit" */;
+			productName = SwipeCellKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 844F172A25EAE1B00099BAEE /* Project object */;
 }
