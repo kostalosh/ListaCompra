@@ -21,6 +21,27 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9YK-m1-XSp">
                         <rect key="frame" x="8" y="8" width="304" height="43"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="7w2-1L-WNY">
+                                <rect key="frame" x="20" y="0.0" width="284" height="43"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Nombre Producto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aN-Sc-nND" userLabel="lblNombreProducto">
+                                        <rect key="frame" x="148.5" y="2" width="135.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJi-q4-A9T" userLabel="lblPrecio">
+                                        <rect key="frame" x="148.5" y="23.5" width="135.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9aN-Sc-nND" firstAttribute="leading" secondItem="7w2-1L-WNY" secondAttribute="leading" constant="2" id="9zq-Y0-LYi"/>
+                                    <constraint firstItem="9aN-Sc-nND" firstAttribute="top" secondItem="7w2-1L-WNY" secondAttribute="top" constant="2" id="M42-1f-lre"/>
+                                </constraints>
+                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="695-7s-0DY" userLabel="ViewColorCategoria">
                                 <rect key="frame" x="4" y="4" width="16" height="35"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -28,28 +49,16 @@
                                     <constraint firstAttribute="width" constant="16" id="jWW-Zg-qIl"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Producto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aN-Sc-nND" userLabel="lblNombreProducto">
-                                <rect key="frame" x="20" y="4" width="135.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJi-q4-A9T" userLabel="lblPrecio">
-                                <rect key="frame" x="87" y="53" width="66" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7w2-1L-WNY" secondAttribute="bottom" id="1nw-k5-8by"/>
                             <constraint firstItem="695-7s-0DY" firstAttribute="top" secondItem="9YK-m1-XSp" secondAttribute="top" constant="4" id="7WU-bI-rBi"/>
-                            <constraint firstItem="9aN-Sc-nND" firstAttribute="top" secondItem="9YK-m1-XSp" secondAttribute="top" constant="4" id="AGZ-hL-C63"/>
-                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9aN-Sc-nND" secondAttribute="bottom" constant="15" id="Rzs-qy-t7m"/>
+                            <constraint firstItem="7w2-1L-WNY" firstAttribute="leading" secondItem="695-7s-0DY" secondAttribute="trailing" id="Ozy-Wb-xJf"/>
+                            <constraint firstAttribute="trailing" secondItem="7w2-1L-WNY" secondAttribute="trailing" id="ZdX-KJ-TLf"/>
                             <constraint firstAttribute="bottom" secondItem="695-7s-0DY" secondAttribute="bottom" constant="4" id="abT-7J-aJ8"/>
                             <constraint firstItem="695-7s-0DY" firstAttribute="leading" secondItem="9YK-m1-XSp" secondAttribute="leading" constant="4" id="azH-BZ-2ns"/>
-                            <constraint firstItem="9aN-Sc-nND" firstAttribute="leading" secondItem="9YK-m1-XSp" secondAttribute="leading" constant="20" id="wjL-Pg-33D"/>
+                            <constraint firstItem="7w2-1L-WNY" firstAttribute="top" secondItem="9YK-m1-XSp" secondAttribute="top" id="fOf-30-GUg"/>
                         </constraints>
                     </view>
                 </subviews>

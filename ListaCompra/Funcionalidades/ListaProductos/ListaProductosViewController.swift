@@ -48,7 +48,7 @@ extension ListaProductosViewController: UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: CeldaViewCell.kCellId, for: indexPath) as? CeldaViewCell {
-            cell.fill(nombreProducto: "Producto \(indexPath.row + 1)", precioProducto: "")
+            cell.fill(nombreProducto: "Producto \(indexPath.row + 1)", precioProducto: "0.00€")
             return cell
         }
 
