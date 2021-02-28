@@ -17,6 +17,4 @@ extension UITableView {
         
         separatorStyle = .singleLine
     }
-    
-    
 }

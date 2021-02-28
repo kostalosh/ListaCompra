@@ -24,19 +24,32 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idW-To-252">
+                    <rect key="frame" x="0.0" y="813" width="414" height="83"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <items>
+                        <tabBarItem selectedImage="icHome" id="ftb-Zi-LOD"/>
+                        <tabBarItem selectedImage="icConfig" id="OT4-vz-nc0"/>
+                    </items>
+                </tabBar>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="OPG-ry-ZQL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0ai-qh-Gw0"/>
+                <constraint firstItem="idW-To-252" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Md4-nT-hnV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="OPG-ry-ZQL" secondAttribute="bottom" id="kEn-oo-FlA"/>
                 <constraint firstItem="OPG-ry-ZQL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="n3X-ot-E9d"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="idW-To-252" secondAttribute="trailing" id="oNL-k6-cJL"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OPG-ry-ZQL" secondAttribute="trailing" id="p8n-eZ-BvO"/>
+                <constraint firstAttribute="bottom" secondItem="idW-To-252" secondAttribute="bottom" id="sZi-6b-c2I"/>
             </constraints>
-            <point key="canvasLocation" x="99" y="132"/>
+            <point key="canvasLocation" x="98.550724637681171" y="131.91964285714286"/>
         </view>
     </objects>
     <resources>
+        <image name="icConfig" width="128" height="128"/>
+        <image name="icHome" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

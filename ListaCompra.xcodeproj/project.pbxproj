@@ -20,6 +20,7 @@
 		844F177125EAF7EC0099BAEE /* CellViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F177025EAF7EC0099BAEE /* CellViewExtension.swift */; };
 		844F177425EAFA1F0099BAEE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F177325EAFA1F0099BAEE /* ColorExtension.swift */; };
 		844F177725EB015A0099BAEE /* LabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F177625EB015A0099BAEE /* LabelExtension.swift */; };
+		8466C53425EBC7E200935B6D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C53325EBC7E200935B6D /* Constant.swift */; };
 		90B97EC1691AD90C6FCA82CA /* Pods_ListaCompra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5948E5A3106795ED7BF6EE /* Pods_ListaCompra.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		844F177025EAF7EC0099BAEE /* CellViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewExtension.swift; sourceTree = "<group>"; };
 		844F177325EAFA1F0099BAEE /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		844F177625EB015A0099BAEE /* LabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExtension.swift; sourceTree = "<group>"; };
+		8466C53325EBC7E200935B6D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		EF5948E5A3106795ED7BF6EE /* Pods_ListaCompra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListaCompra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				844F175025EAE28F0099BAEE /* Ficheros de Soporte */,
 				844F174F25EAE2850099BAEE /* Utils */,
 				844F173E25EAE1B10099BAEE /* Assets.xcassets */,
+				8466C53325EBC7E200935B6D /* Constant.swift */,
 			);
 			path = ListaCompra;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				844F177425EAFA1F0099BAEE /* ColorExtension.swift in Sources */,
 				844F175B25EAE5130099BAEE /* ListaProductosViewController.swift in Sources */,
 				844F173625EAE1B00099BAEE /* AppDelegate.swift in Sources */,
+				8466C53425EBC7E200935B6D /* Constant.swift in Sources */,
 				844F173825EAE1B00099BAEE /* SceneDelegate.swift in Sources */,
 				844F176525EAED110099BAEE /* TableViewExtension.swift in Sources */,
 			);

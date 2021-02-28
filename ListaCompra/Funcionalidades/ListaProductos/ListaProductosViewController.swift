@@ -31,6 +31,7 @@ final class ListaProductosViewController: UIViewController {
     private func setupTable(){
         ListaProductos.configura(Vc: self)
         ListaProductos.register(UINib(nibName: CeldaViewCell.kCellId, bundle: nil), forCellReuseIdentifier: CeldaViewCell.kCellId)
+        ListaProductos.rowHeight = CGFloat(K.altoCeldaProducto)
         }
     
     //MARK: - DataSource y Delegate
@@ -47,7 +48,7 @@ extension ListaProductosViewController: UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: CeldaViewCell.kCellId, for: indexPath) as? CeldaViewCell {
-            cell.fill(nombreProducto: "Producto \(indexPath.row + 1)", precioProducto: "0.00€")
+            cell.fill(nombreProducto: "Producto \(indexPath.row + 1)", precioProducto: "0.00€",cantidad: "1 botella")
             return cell
         }
 
