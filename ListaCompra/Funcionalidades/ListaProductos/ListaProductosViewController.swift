@@ -59,6 +59,7 @@ extension ListaProductosViewController: UITableViewDataSource, UITableViewDelega
         return UITableViewCell()
     }
     
+    // evento al pulsar en una celda
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         
     }

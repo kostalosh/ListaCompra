@@ -26,6 +26,7 @@
 		8466C54425EBEBE300935B6D /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8466C54325EBEBE300935B6D /* SwipeCellKit */; };
 		8466C55125EC0F3E00935B6D /* DetalleProductoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C54F25EC0F3E00935B6D /* DetalleProductoViewController.swift */; };
 		8466C55225EC0F3E00935B6D /* DetalleProductoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8466C55025EC0F3E00935B6D /* DetalleProductoViewController.xib */; };
+		8466C55625EC2ECC00935B6D /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C55525EC2ECC00935B6D /* ButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		8466C53E25EBE05100935B6D /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		8466C54F25EC0F3E00935B6D /* DetalleProductoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleProductoViewController.swift; sourceTree = "<group>"; };
 		8466C55025EC0F3E00935B6D /* DetalleProductoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalleProductoViewController.xib; sourceTree = "<group>"; };
+		8466C55525EC2ECC00935B6D /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				844F177325EAFA1F0099BAEE /* ColorExtension.swift */,
 				844F177625EB015A0099BAEE /* LabelExtension.swift */,
 				8466C53E25EBE05100935B6D /* StringExtensions.swift */,
+				8466C55525EC2ECC00935B6D /* ButtonExtension.swift */,
 			);
 			path = Extensiones;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				844F173625EAE1B00099BAEE /* AppDelegate.swift in Sources */,
 				8466C53425EBC7E200935B6D /* Constant.swift in Sources */,
 				844F173825EAE1B00099BAEE /* SceneDelegate.swift in Sources */,
+				8466C55625EC2ECC00935B6D /* ButtonExtension.swift in Sources */,
 				844F176525EAED110099BAEE /* TableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
