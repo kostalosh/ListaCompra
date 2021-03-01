@@ -27,6 +27,8 @@
 		8466C55125EC0F3E00935B6D /* DetalleProductoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C54F25EC0F3E00935B6D /* DetalleProductoViewController.swift */; };
 		8466C55225EC0F3E00935B6D /* DetalleProductoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8466C55025EC0F3E00935B6D /* DetalleProductoViewController.xib */; };
 		8466C55625EC2ECC00935B6D /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C55525EC2ECC00935B6D /* ButtonExtension.swift */; };
+		847D3E1525ED4C8F0073BDF9 /* PickerViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D3E1425ED4C8F0073BDF9 /* PickerViewExtension.swift */; };
+		847D3E1825ED57E90073BDF9 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D3E1725ED57E90073BDF9 /* TextFieldExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		8466C54F25EC0F3E00935B6D /* DetalleProductoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleProductoViewController.swift; sourceTree = "<group>"; };
 		8466C55025EC0F3E00935B6D /* DetalleProductoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalleProductoViewController.xib; sourceTree = "<group>"; };
 		8466C55525EC2ECC00935B6D /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
+		847D3E1425ED4C8F0073BDF9 /* PickerViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewExtension.swift; sourceTree = "<group>"; };
+		847D3E1725ED57E90073BDF9 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,8 @@
 				844F177625EB015A0099BAEE /* LabelExtension.swift */,
 				8466C53E25EBE05100935B6D /* StringExtensions.swift */,
 				8466C55525EC2ECC00935B6D /* ButtonExtension.swift */,
+				847D3E1425ED4C8F0073BDF9 /* PickerViewExtension.swift */,
+				847D3E1725ED57E90073BDF9 /* TextFieldExtension.swift */,
 			);
 			path = Extensiones;
 			sourceTree = "<group>";
@@ -262,7 +268,9 @@
 				8466C55125EC0F3E00935B6D /* DetalleProductoViewController.swift in Sources */,
 				844F177725EB015A0099BAEE /* LabelExtension.swift in Sources */,
 				844F176B25EAF2550099BAEE /* CeldaViewCell.swift in Sources */,
+				847D3E1825ED57E90073BDF9 /* TextFieldExtension.swift in Sources */,
 				844F177125EAF7EC0099BAEE /* CellViewExtension.swift in Sources */,
+				847D3E1525ED4C8F0073BDF9 /* PickerViewExtension.swift in Sources */,
 				844F176225EAE65E0099BAEE /* ViewControllerExtension.swift in Sources */,
 				844F177425EAFA1F0099BAEE /* ColorExtension.swift in Sources */,
 				844F175B25EAE5130099BAEE /* ListaProductosViewController.swift in Sources */,

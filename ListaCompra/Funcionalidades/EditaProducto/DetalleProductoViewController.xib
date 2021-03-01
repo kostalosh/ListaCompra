@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalleProductoViewController" customModule="ListaCompra" customModuleProvider="target">
             <connections>
+                <outlet property="UbicacionTxt" destination="11I-Mh-vba" id="KDI-F1-cA8"/>
+                <outlet property="UnidadesTxt" destination="o1H-Dr-3ft" id="SVU-Lg-Su2"/>
                 <outlet property="btnEliminar" destination="vLq-yi-7lZ" id="k8e-QB-iaZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,23 +22,23 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="crW-cR-IQ7" userLabel="STPrincipal">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="crW-cR-IQ7" userLabel="STPrincipal">
                     <rect key="frame" x="0.0" y="44" width="414" height="300"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jj-qO-rIa" userLabel="STUbicacion">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="73.5"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6uj-Xn-lVU" userLabel="STUbicacion-añadirUbicacion">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="73.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ubicación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLy-Ny-yAP">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="34.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="37"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5yb-Xg-C9j">
-                                            <rect key="frame" x="0.0" y="34.5" width="300" height="34.5"/>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ubicacion..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="11I-Mh-vba">
+                                            <rect key="frame" x="0.0" y="37" width="300" height="36.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -46,26 +48,26 @@
                                     </constraints>
                                 </stackView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5D-YM-Han">
-                                    <rect key="frame" x="300" y="0.0" width="114" height="69"/>
+                                    <rect key="frame" x="300" y="0.0" width="114" height="73.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <state key="normal" title="&gt;"/>
                                 </button>
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCx-ws-yoo" userLabel="STUnidad">
-                            <rect key="frame" x="0.0" y="77" width="414" height="69"/>
+                            <rect key="frame" x="0.0" y="75.5" width="414" height="73.5"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="joj-71-6Eg" userLabel="STUbicacion-añadirUbicacion">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="73.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unidad de compra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9w-NY-KMy" userLabel="Unidad de compra">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="34.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="37"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Añadir unidad de compra..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1iv-hd-SQC">
-                                            <rect key="frame" x="0.0" y="34.5" width="300" height="34.5"/>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Unidad de compra..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1H-Dr-3ft">
+                                            <rect key="frame" x="0.0" y="37" width="300" height="36.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -75,17 +77,17 @@
                                     </constraints>
                                 </stackView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8J-PA-VYi">
-                                    <rect key="frame" x="300" y="0.0" width="114" height="69"/>
+                                    <rect key="frame" x="300" y="0.0" width="114" height="73.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <state key="normal" title="&gt;"/>
                                 </button>
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XqP-CB-YRS" userLabel="STPrecio">
-                            <rect key="frame" x="0.0" y="154" width="414" height="69"/>
+                            <rect key="frame" x="0.0" y="151" width="414" height="73.5"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NQd-qb-k11" userLabel="STUbicacion-añadirUbicacion">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="73.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ubicación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQY-WQ-kL9">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="20.5"/>
@@ -94,7 +96,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UOr-Zb-tnd">
-                                            <rect key="frame" x="0.0" y="20.5" width="300" height="48.5"/>
+                                            <rect key="frame" x="0.0" y="20.5" width="300" height="53"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -105,7 +107,7 @@
                                     </constraints>
                                 </stackView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Jp-v3-oif">
-                                    <rect key="frame" x="300" y="0.0" width="114" height="69"/>
+                                    <rect key="frame" x="300" y="0.0" width="114" height="73.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <state key="normal" title="&gt;"/>
                                 </button>
@@ -113,10 +115,10 @@
                             <color key="backgroundColor" red="0.81810320759999999" green="1" blue="0.95468895990000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqP-DL-K7I" userLabel="STCompraRecurrente">
-                            <rect key="frame" x="0.0" y="231" width="414" height="69"/>
+                            <rect key="frame" x="0.0" y="226.5" width="414" height="73.5"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xFb-mE-CwW" userLabel="STUbicacion-añadirUbicacion">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="73.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ubicación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzb-Oy-lLi">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="20.5"/>
@@ -125,7 +127,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n3j-Z8-oIG">
-                                            <rect key="frame" x="0.0" y="20.5" width="300" height="48.5"/>
+                                            <rect key="frame" x="0.0" y="20.5" width="300" height="53"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -136,7 +138,7 @@
                                     </constraints>
                                 </stackView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nq3-Xj-pej">
-                                    <rect key="frame" x="300" y="0.0" width="114" height="69"/>
+                                    <rect key="frame" x="300" y="0.0" width="114" height="73.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <state key="normal" title="&gt;"/>
                                 </button>
@@ -163,7 +165,7 @@
                     </items>
                 </tabBar>
                 <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLq-yi-7lZ">
-                    <rect key="frame" x="16" y="747" width="382" height="50"/>
+                    <rect key="frame" x="16" y="755" width="382" height="50"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="8q9-ws-G88"/>
@@ -178,7 +180,7 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fhS-B5-ral" firstAttribute="top" secondItem="vLq-yi-7lZ" secondAttribute="bottom" constant="16" id="0K7-7e-qe6"/>
+                <constraint firstItem="fhS-B5-ral" firstAttribute="top" secondItem="vLq-yi-7lZ" secondAttribute="bottom" constant="8" id="0K7-7e-qe6"/>
                 <constraint firstItem="fhS-B5-ral" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0RZ-PI-BaD"/>
                 <constraint firstItem="crW-cR-IQ7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="26S-Sn-IJG"/>
                 <constraint firstItem="fhS-B5-ral" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="940-o0-Egx"/>
@@ -188,7 +190,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="crW-cR-IQ7" secondAttribute="trailing" id="pv5-be-dS7"/>
                 <constraint firstItem="vLq-yi-7lZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="zdi-5V-ZWo"/>
             </constraints>
-            <point key="canvasLocation" x="-114.49275362318842" y="131.91964285714286"/>
+            <point key="canvasLocation" x="-577" y="-200"/>
         </view>
     </objects>
     <resources>

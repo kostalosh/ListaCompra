@@ -20,4 +20,10 @@ extension UILabel {
         textColor = .letraSecundaria
     }
     
+    func conBorde(){
+        self.layer.borderColor = UIColor.lightGray.cgColor
+        self.layer.borderWidth = 0.5
+        self.layer.cornerRadius = 5
+    }
+    
 }
