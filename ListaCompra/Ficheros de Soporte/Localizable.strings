@@ -1,0 +1,13 @@
+/* 
+  localizable.strings
+  ListaCompra
+
+  Created by Antonio Galvan Ruiz on 28/2/21.
+  
+*/
+
+
+"app.title" = "Lista Compra";
+"productos.title" = "Productos";
+
+"editaproducto.title" = "Edición";

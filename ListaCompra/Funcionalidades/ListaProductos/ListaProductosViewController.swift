@@ -6,23 +6,67 @@
 //
 
 import UIKit
+import CoreData
 
 final class ListaProductosViewController: UIViewController {
 
+    //MARK: - Variables globales
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var productoArray = [Producto]()
+    
     //MARK: - Outlets
     @IBOutlet weak var ListaProductos: UITableView!
+    
     
     
     //MARK: - Aplicación
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)
 
+        //imprime ruta
+        
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
         setup()
+        configuraBarraSuperior()
         localize()
+        cargaDatos()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        let request: NSFetchRequest<Producto> = Producto.fetchRequest()
+        
+        do {
+            try productoArray = context.fetch(request)
+        } catch  {
+            print("Error al recuperar los datos")
+        }
+        self.ListaProductos.reloadData()
+    }
     
     //MARK: - Funciones privadas
+    
+   @objc func loadList() {
+        self.ListaProductos.reloadData()
+    }
+    
+    private func cargaDatos() {
+        let request : NSFetchRequest<Producto> = Producto.fetchRequest()
+        do {
+           productoArray = try context.fetch(request)
+        } catch  {
+            print("Error al recuperar los datos")
+        }
+        
+        
+    }
+    private func configuraBarraSuperior(){
+        //Título
+        localize()
+        //añade boton OK al navigation controller
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(botonAñadirPulsado))
+        
+    }
     private func setup(){
         
         setupTable()
@@ -36,7 +80,46 @@ final class ListaProductosViewController: UIViewController {
         ListaProductos.configura(Vc: self)
         ListaProductos.register(UINib(nibName: CeldaViewCell.kCellId, bundle: nil), forCellReuseIdentifier: CeldaViewCell.kCellId)
         ListaProductos.rowHeight = CGFloat(K.altoCeldaProducto)
+        
         }
+    
+    //Botón de añadir pulsado
+    @objc private func botonAñadirPulsado(){
+        
+        //vamos a la ventana de creación de nuevo producto
+        navigationController?.pushViewController(NuevoProductoView(nombreProducto: "", precioProducto: 0.0), animated: true)
+        
+        
+        
+      /*  var textField = UITextField()
+        let controller = UIAlertController(title: "Añade producto", message: "", preferredStyle: .alert)
+        let addAction = UIAlertAction(title: "Añadir", style: .default) {
+         (action) in
+            let producto = Producto(context: self.context)
+            producto.nombre = textField.text!
+            self.guardaDatos()
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+        controller.addAction(addAction)
+        controller.addAction(cancelAction)
+        
+        controller.addTextField { (alertTextField) in
+            alertTextField.placeholder = "Escribe aquí el nombre del producto"
+            textField = alertTextField
+        }
+        present(controller, animated: true, completion: nil)
+    */
+    }
+    
+    private func guardaDatos(){
+        do{
+            try context.save()
+        } catch {
+            print("Error al intentar guardar los datos")
+        }
+        self.ListaProductos.reloadData()
+    }
     
     //MARK: - DataSource y Delegate
     
@@ -47,12 +130,14 @@ final class ListaProductosViewController: UIViewController {
 
 extension ListaProductosViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        productoArray.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = productoArray[indexPath.row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: CeldaViewCell.kCellId, for: indexPath) as? CeldaViewCell {
-            cell.fill(nombreProducto: "Producto \(indexPath.row + 1)", precioProducto: "0.00€",cantidad: "0")
+            cell.fill(nombreProducto: item.nombre ?? "", precioProducto: String(item.precio) ,cantidad: "0")
             return cell
         }
 

@@ -18,6 +18,8 @@ final class DetalleProductoViewController: UIViewController  {
     @IBOutlet weak var btnEliminar: UIButton!
     @IBOutlet weak var UbicacionTxt: UITextField!
     @IBOutlet weak var UnidadesTxt: UITextField!
+    @IBOutlet weak var lblUbicacion: UILabel!
+    @IBOutlet weak var lblUnidades: UILabel!
     
     var ubicacionPickerView = UIPickerView()
     var unidadesPickerView = UIPickerView()
@@ -68,6 +70,9 @@ final class DetalleProductoViewController: UIViewController  {
         ubicacionPickerView.tag = 1
         unidadesPickerView.tag = 2
         
+        //configura los label
+        lblUbicacion.labelTitulosEnAzul()
+        lblUnidades.labelTitulosEnAzul()
     }
     
     private func localize(){

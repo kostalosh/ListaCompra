@@ -26,4 +26,9 @@ extension UILabel {
         self.layer.cornerRadius = 5
     }
     
+    func labelTitulosEnAzul() {
+        self.font = UIFont(name: "Kailasa", size: 17.0)
+        self.textColor = UIColor.init(named: "Azul")
+           
+    }
 }
