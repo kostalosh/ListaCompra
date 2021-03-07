@@ -44,7 +44,7 @@ final class NuevoProductoView: UIViewController {
 
    //MARK: - Funciones públicas
     
-    @IBAction func btnAñadirPressed(_ sender: Any) {
+    @IBAction func btnAñadirPressed(_ sender: UIButton) {
         let nCaracteres: Int = txtNombre.text?.count ?? 0
         if nCaracteres == 0 {
             self.showAlert(withTitle: "Rellene todos los datos", message: "")
@@ -53,6 +53,8 @@ final class NuevoProductoView: UIViewController {
                 guardaDatos()
             }
         }
+        dismiss(animated: true, completion: nil)
+        print("Producto añadido...")
     }
     
     func guardaDatos() {
@@ -61,15 +63,20 @@ final class NuevoProductoView: UIViewController {
         producto.precio = (txtPrecio.text as NSString?)!.doubleValue // Double(txtPrecio.text)
         do {
             try context.save()
-            self.showAlert(withTitle: "Producto guardado", message: "")
+            //self.showAlert(withTitle: "Producto guardado", message: "")
+
+            self.navigationController?.popViewController(animated: true)
+            self.dismiss(animated: true, completion: nil)
+            print("Producto añadido 2...")
             
-            limpiaFormulario()
+            //limpiaFormulario()
             
             
         } catch  {
             print("Error al guardar los datos...")
         }
     }
+    
     private func limpiaFormulario(){
         txtNombre.text = ""
         txtPrecio.text = ""        
@@ -95,3 +102,4 @@ extension UIViewController {
     present(alert, animated: true, completion: nil)
   }
 }
+
