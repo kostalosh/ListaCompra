@@ -27,6 +27,7 @@
 		8466C55125EC0F3E00935B6D /* DetalleProductoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C54F25EC0F3E00935B6D /* DetalleProductoViewController.swift */; };
 		8466C55225EC0F3E00935B6D /* DetalleProductoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8466C55025EC0F3E00935B6D /* DetalleProductoViewController.xib */; };
 		8466C55625EC2ECC00935B6D /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C55525EC2ECC00935B6D /* ButtonExtension.swift */; };
+		8474FC9325F548E30073BEA3 /* CategoriaExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474FC9225F548E30073BEA3 /* CategoriaExtension.swift */; };
 		847954B525F2A24A00B0249C /* ModelData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 847954B325F2A24A00B0249C /* ModelData.xcdatamodeld */; };
 		847D3E1525ED4C8F0073BDF9 /* PickerViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D3E1425ED4C8F0073BDF9 /* PickerViewExtension.swift */; };
 		847D3E1825ED57E90073BDF9 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D3E1725ED57E90073BDF9 /* TextFieldExtension.swift */; };
@@ -57,6 +58,7 @@
 		8466C54F25EC0F3E00935B6D /* DetalleProductoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleProductoViewController.swift; sourceTree = "<group>"; };
 		8466C55025EC0F3E00935B6D /* DetalleProductoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalleProductoViewController.xib; sourceTree = "<group>"; };
 		8466C55525EC2ECC00935B6D /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
+		8474FC9225F548E30073BEA3 /* CategoriaExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaExtension.swift; sourceTree = "<group>"; };
 		847954B425F2A24A00B0249C /* ModelData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelData.xcdatamodel; sourceTree = "<group>"; };
 		847D3E1425ED4C8F0073BDF9 /* PickerViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewExtension.swift; sourceTree = "<group>"; };
 		847D3E1725ED57E90073BDF9 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				8466C55525EC2ECC00935B6D /* ButtonExtension.swift */,
 				847D3E1425ED4C8F0073BDF9 /* PickerViewExtension.swift */,
 				847D3E1725ED57E90073BDF9 /* TextFieldExtension.swift */,
+				8474FC9225F548E30073BEA3 /* CategoriaExtension.swift */,
 			);
 			path = Extensiones;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				847954B525F2A24A00B0249C /* ModelData.xcdatamodeld in Sources */,
 				84827FF325F40794005996E7 /* Product.swift in Sources */,
 				8466C53F25EBE05100935B6D /* StringExtensions.swift in Sources */,
+				8474FC9325F548E30073BEA3 /* CategoriaExtension.swift in Sources */,
 				844F173625EAE1B00099BAEE /* AppDelegate.swift in Sources */,
 				8466C53425EBC7E200935B6D /* Constant.swift in Sources */,
 				844F173825EAE1B00099BAEE /* SceneDelegate.swift in Sources */,

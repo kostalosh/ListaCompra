@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D80" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Producto" representedClassName="Producto" syncable="YES" codeGenerationType="class">
+    <entity name="Categorias" representedClassName=".Categorias" syncable="YES" codeGenerationType="class">
+        <attribute name="colorHex" optional="YES" attributeType="String"/>
+        <attribute name="nombre" attributeType="String"/>
+        <relationship name="producto" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Producto" inverseName="idCategoria" inverseEntity="Producto"/>
+    </entity>
+    <entity name="Producto" representedClassName=".Producto" syncable="YES" codeGenerationType="class">
         <attribute name="nombre" attributeType="String"/>
         <attribute name="precio" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="idCategoria" maxCount="1" deletionRule="Nullify" destinationEntity="Categorias" inverseName="producto" inverseEntity="Categorias"/>
     </entity>
     <elements>
-        <element name="Producto" positionX="-63" positionY="-18" width="128" height="59"/>
+        <element name="Producto" positionX="532.546875" positionY="-12.16796875" width="128" height="88"/>
+        <element name="Categorias" positionX="259.421875" positionY="-5.484375" width="128" height="88"/>
     </elements>
 </model>

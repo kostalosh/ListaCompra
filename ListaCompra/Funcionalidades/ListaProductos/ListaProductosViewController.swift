@@ -65,7 +65,6 @@ final class ListaProductosViewController: UIViewController {
         localize()
         //añade boton OK al navigation controller
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(botonAñadirPulsado))
-        
     }
     private func setup(){
         
